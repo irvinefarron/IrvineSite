@@ -1,83 +1,112 @@
-:root
-{
-	--bgMain: rgb(100,30,30);
-	--bgSecond: rgb(100,100,200);
-	--linkHover: rgb(250,20,20);
-	--color4: #00ff00;
+/*
+    Les Variables
+
+*/
+
+
+:root {
+    --bgMain: rgba(15,10,10,95%);
+    --bgSecond: rgba(60,25,60,95%);
+    --linkHover: rgb(150,20,20);
+    --ecriture: rgba(220,220,220,1);
+}
+
+/*
+    Les balises en général
+
+*/
+
+html {
+    font-family: Arial
+}
+
+header {
+    display: flex;
+    background-color: var(--bgSecond);
+    padding: 0rem 1rem 0rem 1rem;
+    position: relative;
 }
 
 
 
-html
-{
-	font-family: Arial
+h1 {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    
 }
 
-body 
-{
-	background-color: var(--bgMain);
-	color: Black;
-	font-weight: 100;
-	font-size: 1em;
-}
-
-h4 {
-    width: 95vw;
-    padding: 1rem 1rem 1rem 1rem;
+body {
+    background-color: var(--bgMain);
+    color: var(--ecriture);
+    font-size: 1em;
 }
 
 
-a:hover
-{
-	background-color: var(--linkHover);
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: var(--ecriture);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
 }
 
-/*a:visited
-{
-	color: rgb(50,0,70);
-}*/
+    a:hover {
+        width: auto;
+        height: auto;
+        background-color: var(--linkHover);
+        transition: 200ms;
+    }
 
-
-a
-{
-	text-decoration : none;
-	color: black;
+p {
+    margin: 4rem;
+    padding: 0rem 1rem;
 }
 
-p, ol
-{
-	background-color: green;
-	margin: 250px;
-	padding: 100px;
-	
+ol {
+    background-color: var(--bgSecond);
+    margin: 250px;
+    padding: 100px;
 }
 
-input 
-{
 
-	width: 20rem;
-	height: 10rem;
-	font-size: 2rem;
-	padding: 2rem;
-
-}
 
 
 nav {
-    background-color: rgb(100,100,200);
-    width: 30rem;
-    border-radius: 0.5rem;
+    background-color: var(--bgSecond);
+    border-radius: 1rem;
     padding: 0rem 1rem;
-
 }
 
-.portail 
-{
-    align-content: center;
-	justify-content:center;
-	margin:auto;
+
+/*
+    Les classes
+
+*/
+.portail {
+    justify-items: center;
+    margin: auto;
+    padding: 0rem 1rem;
+    overflow: auto;
+    width: fit-content;
 }
+
+
+.intro {
+    width: 95vw;
+    padding: 1rem 1rem 1rem 1rem;
+    text-indent: 1.5rem;
+}
+
 
 .indice {
     font-size: 0.8rem;
+}
+
+.retour-portail {
+    height: 4rem;
 }
