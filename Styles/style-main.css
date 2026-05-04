@@ -1,0 +1,83 @@
+:root
+{
+	--bgMain: rgb(100,30,30);
+	--bgSecond: rgb(100,100,200);
+	--linkHover: rgb(250,20,20);
+	--color4: #00ff00;
+}
+
+
+
+html
+{
+	font-family: Arial
+}
+
+body 
+{
+	background-color: var(--bgMain);
+	color: Black;
+	font-weight: 100;
+	font-size: 1em;
+}
+
+h4 {
+    width: 95vw;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+a:hover
+{
+	background-color: var(--linkHover);
+}
+
+/*a:visited
+{
+	color: rgb(50,0,70);
+}*/
+
+
+a
+{
+	text-decoration : none;
+	color: black;
+}
+
+p, ol
+{
+	background-color: green;
+	margin: 250px;
+	padding: 100px;
+	
+}
+
+input 
+{
+
+	width: 20rem;
+	height: 10rem;
+	font-size: 2rem;
+	padding: 2rem;
+
+}
+
+
+nav {
+    background-color: rgb(100,100,200);
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+
+}
+
+.portail 
+{
+    align-content: center;
+	justify-content:center;
+	margin:auto;
+}
+
+.indice {
+    font-size: 0.8rem;
+}
