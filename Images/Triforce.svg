@@ -1,0 +1,36 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+	
+	<!--Triangle Rouge -->
+	
+	<polygon
+		points="100,10 52,94 148,94"
+		fill="#ee0000"
+		stroke="#000"
+		stroke-width="4"/>
+
+	<!--Triangle Bleu -->
+	
+	<polygon
+		  points="52,94 4,178 100,178"
+		  fill="#3333FF"
+		  stroke="#000"
+		  stroke-width="4"/>
+
+	<!--Triangle Vert -->
+	
+	<polygon
+	  points="148,94 100,178 196,178"
+	  fill="#00bb00"
+	  stroke="#000"
+	  stroke-width="4"/>
+
+	<!-- Triangle Noir -->
+
+	<polygon
+		points="52,92 148,92 100,178"
+		fill="#000"/>
+	
+	
+	
+</svg>

@@ -6,9 +6,10 @@
 
 :root {
     --bgMain: rgba(15,10,10,95%);
-    --bgSecond: rgba(60,25,60,95%);
+    --bgSecond: rgba(50,20,20,70%);
     --linkHover: rgb(150,20,20);
     --ecriture: rgba(220,220,220,1);
+    --lien: rgba(130,130,130,1);
 }
 
 /*
@@ -97,10 +98,15 @@ nav {
 
 
 .intro {
-    width: 95vw;
+    width: 90vw;
     padding: 1rem 1rem 1rem 1rem;
     text-indent: 1.5rem;
+    font-weight: 700;
 }
+
+    .intro a {
+        color: var(--lien);
+    }
 
 .vide {
     color: black;
