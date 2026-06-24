@@ -7,6 +7,7 @@
 :root {
     --bgMain: rgba(15,10,10,95%);
     --bgSecond: rgba(50,20,20,70%);
+    --bgFooter: rgba(20,0,0,70%);
     --linkHover: rgb(150,20,20);
     --ecriture: rgba(220,220,220,1);
     --lien: rgba(130,130,130,1);
@@ -18,7 +19,7 @@
 */
 
 html {
-    font-family: Arial
+    font-family: Arial;
 }
 
 header {
@@ -28,26 +29,63 @@ header {
     position: relative;
 }
 
-
-
 h1 {
+    padding: 0 30vw;
+}
+
+
+header h1 {
     position: absolute;
     left: 50%;
     translate: -50%;
-    
+    padding: 0;
+}
+
+h1:has(a) {
+    position: absolute;
+    left: 5%;
+    translate: 0;
+}
+
+header h2 {
+    position: absolute;
+    left: 50%;
+    translate: -50% -30%;
+}
+
+
+
+h2 {
+    margin: 2rem;
+}
+
+h3 {
+    margin: 2rem;
 }
 
 body {
     background-color: var(--bgMain);
     color: var(--ecriture);
     font-size: 1em;
+    margin: 0;
 }
 
+pre {
+    background-color: #2e2e2e;
+    color: #f8f8f2;
+    padding: 1em;
+    border-radius: 0.7em;
+    width: 180vh;
+}
 
+code {
+    font-family: 'Monospace',monospace;
+    color: #ff4444;
+}
 
-
-
-
+pre > code {
+    color: #fff;
+}
 
 a {
     text-decoration: none;
@@ -74,15 +112,31 @@ ol {
     padding: 100px;
 }
 
-
-
-
 nav {
     background-color: var(--bgSecond);
     border-radius: 1rem;
     padding: 0rem 1rem;
 }
 
+footer {
+    background-color: var(--bgFooter);
+    border-radius: 0rem;
+    width: 100vw;
+    padding: 1rem 1rem;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 5rem 1rem;
+}
+
+
+
+li::before {
+    content: "=> ";
+    font-family: monospace;
+}
 
 /*
     Les classes
@@ -95,6 +149,19 @@ nav {
     overflow: auto;
     width: fit-content;
 }
+
+    .portail ul {
+        list-style-type: square;
+    }
+
+        .portail ul ul {
+            list-style-type: circle;
+            padding: 0 2rem 1rem
+        }
+
+    .portail li::before {
+        content: "";
+    }
 
 
 .intro {
