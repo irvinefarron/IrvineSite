@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 body {
@@ -102,7 +102,7 @@ a {
     }
 
 p {
-    margin: 4rem;
+    margin: 1rem 3rem;
     padding: 0rem 1rem;
 }
 
@@ -113,17 +113,15 @@ ol {
 }
 
 nav {
-    background-color: var(--bgSecond);
-    border-radius: 1rem;
-    padding: 0rem 1rem;
+    
 }
 
 footer {
     background-color: var(--bgFooter);
     border-radius: 0rem;
     width: 100vw;
-    padding: 1rem 1rem;
-    margin: 0;
+    padding: 2rem 5rem;
+    margin: auto;
 }
 
 ul {
@@ -144,6 +142,9 @@ li::before {
 */
 .portail {
     justify-items: center;
+    background-color: var(--bgSecond);
+    border-radius: 1rem;
+    padding: 0rem 1rem;
     margin: auto;
     padding: 0rem 1rem;
     overflow: auto;
@@ -169,6 +170,8 @@ li::before {
     padding: 1rem 1rem 1rem 1rem;
     text-indent: 1.5rem;
     font-weight: 700;
+    font-style: italic;
+    text-align: justify;
 }
 
     .intro a {
